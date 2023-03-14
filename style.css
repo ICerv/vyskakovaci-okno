@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
+
 body {
   font: 16px/1.5 sans-serif;
 }
@@ -28,3 +38,41 @@ button {
 }
 
 /* sem přijdou tvoje styly */
+.modal {
+  position: relative;
+  left: 200px;
+  padding: 25px;
+}
+
+.exit {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.ok {
+  position: absolute;
+  bottom: 5px;
+  left: calc(50% - 80px / 2);
+}
+
+.help-box {
+  width: 30vw;
+  height: 13vh;
+  border: 15px solid #c51f1f;
+  background-color: #daa8a8;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.help-btn {
+  color: black;
+  background-color: #c51f1f;
+  position: absolute;
+  bottom: 5px;
+  left: calc(50% - 80px / 2);
+}
